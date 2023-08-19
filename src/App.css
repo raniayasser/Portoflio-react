@@ -1,38 +1,494 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+body {
+  overflow-x: hidden;
+}
+
+.bannar,
+.homesec2,
+.homesec4 {
+  background-color: #070707;
+  padding: 100px 0;
+}
+
+.preloaderr {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+}
+.loader {
+  margin: auto;
+  padding-top: 50%;
+}
+
+/* -----------------{ navbar }------------------- */
+
+#Navbar .navbar-toggler {
+  background-color: white;
+}
+.navlinks {
+  margin-left: auto;
+}
+.navlinks a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.navlinks a:hover {
+  color: #f87765;
+  transform: scale(1.1);
+}
+img {
+  width: 100px;
+}
+
+/* ---------------------------------{ Home }-------------------------------- */
+
+.bannar .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bannar p {
+  color: #f87765;
+}
+.bannar span,
+.bannar h1 {
+  color: white;
+}
+.bannar h5 {
+  margin-bottom: 30px;
+  color: rgb(184, 184, 184);
+}
+
+.bannar button {
+  text-decoration: none;
+  color: white;
+  background-color: #f87765;
+  border-radius: 5px;
+  padding: 7px 20px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  border: none;
+}
+.bannar button:hover {
+  background-color: #580a00;
+
+  transform: scale(1.1);
+}
+
+.bannar .bannarimgs {
+  position: relative;
+}
+
+.bannar .bannarimgs .waves {
+  width: 100%;
+}
+.bannar .bannarimgs .laptop {
+  width: 75%;
+  position: absolute;
+  /* left: 70px;
+  top: 50px; */
+  left: 14%;
+  top: 8%;
+}
+
+.bannar .imgbox {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(248, 119, 101, 0.2);
+  backdrop-filter: blur(3px);
+  width: 18%;
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.imgbox img {
+  width: 100%;
+}
+.bannar .gimg {
+  left: 14%;
+  bottom: 33%;
+}
+.bannar .uimg {
+  right: 20%;
+  bottom: 23%;
+}
+.bannar .wimg {
+  top: 12%;
+  left: 52%;
+}
+
+/* ------------------------------  { section 2 }  --------------------------------- */
+.homesec2 .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homesec2 .textsec2 {
+  color: white;
+  font-size: 150%;
+  padding: 20px;
+}
+.homesec2 .textsec2 button {
+  background-color: #070707;
+  color: white;
+  border-radius: 5px;
+  border-color: #ff614c;
+  border-width: 1px;
+  padding: 3px 10px;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.homesec2 .textsec2 button:hover {
+  background-color: #ff614c;
+  color: white;
+  transform: scale(1.1);
+}
+
+.homesec2 .sec2Images {
+  position: relative;
+}
+.homesec2 .sec2Images .waves {
+  width: 100%;
+  transform: rotate(45deg);
+}
+.homesec2 .sec2Images .people {
+  width: 80%;
+  position: absolute;
+  /* top: 180px;
+  left: 140px; */
+  top: 30%;
+  left: 20%;
+}
+/* ------------------------------  { section 3 Latest  }  --------------------------------- */
+.home3 {
+  background-color: #070707;
+  padding: 100px 0;
+}
+.home3 .sectext {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 0 0 100px 100px;
+}
+.home3 .sectext a {
+  color: #f87765;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.home3 .swiper-slide {
+  margin-left: 20px;
+}
+.home3 .swiper-pagination-bullet {
+  background-color: #f87765;
+  height: 15px;
+  width: 15px;
+}
+
+.home3 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ------------------------------  { section 4 Process }  --------------------------------- */
+
+.homesec4 {
+  padding: 100px 0px;
+  position: relative;
+}
+.homesec4 .waves {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  left: 25%;
+  height: 80%;
+  object-fit: contain;
+  transform: rotate(30deg);
+}
+
+.homesec4 h1 {
+  color: white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homesec4 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 110%;
+}
+.homesec4 img {
+  width: 50px;
+  margin: 0px 10px;
+}
+.homesec4 .divLeft,
+.homesec4 .divRight {
+  width: 50%;
+  background-color: rgba(248, 119, 101, 0.2);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.homesec4 .divLeft,
+.homesec4 .divRight {
+  width: 50%;
+  background-color: rgba(248, 119, 101, 0.2);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  /* overflow: hidden; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homesec4 .divLeft {
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homesec4 .divRight {
+  margin-left: auto;
+}
+
+.homesec4 .divLeft img,
+.homesec4 .divRight img {
+  /* width:100%; */
+  height: 70px;
+  margin-right: 10px;
+}
+
+.homesec4 p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 90%;
+}
+
+/* ------------------------------  { section 5 service }  --------------------------------- */
+.homesec5 {
+  background-color: #070707;
+  padding: 100px 0px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.homesec5 h2 {
+  margin-bottom: 100px;
+}
+.homesec5 .col {
+  margin-bottom: 20px;
+}
+.homesec5 .cardd {
+  width: 100%;
+  height: 98%;
+  background-color: rgba(248, 119, 101, 0.2);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.homesec5 .cardd img {
+  width: 80%;
+  margin: 50px 0px;
+}
+.homesec5 h3 {
+  font-size: 170%;
+}
+.homesec5 h5 {
+  color: #f87765;
+  font-size: 100%;
+}
+.homesec5 p {
+  font-size: 100%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+/* -------------------   { section Contact } -------------------------------- */
+
+.homesec6 {
+  background-color: #070707;
+  color: white;
+  padding: 100px 0;
+}
+.homesec6 .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.homesec6 h3 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.homesec6 span {
+  color: #f87765;
+  padding-right: 10px;
+}
+.homesec6 p {
+  font-size: 100%;
+}
+
+.homesec6 .infotext {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  /* width: 100%; */
+}
+.homesec6 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+.homesec6 .intdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homesec6 input {
+  width: 100%;
+}
+.homesec6 input,
+.homesec6 textarea {
+  background-color: #070707;
+  border-color: #ff614c;
+  border-radius: 50px;
+  color: white;
+  padding: 5px 20px;
+  border-width: 1px;
+  margin: 10px 5px;
+  outline: none;
+  transition: all 0.3s;
+}
+.homesec6 ::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homesec6 input:focus,
+.homesec6 textarea:focus {
+  border: 1px solid #ff614c;
+  box-shadow: 0px 0px 3px 0px wheat;
+  transform: scale(0.9);
+}
+.homesec6 textarea {
+  width: 100%;
+  height: 10vh;
+}
+.homesec6 button {
+  text-decoration: none;
+  color: white;
+  background-color: #f87765;
+  border-radius: 5px;
+  padding: 7px 20px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  border: none;
+}
+.homesec6 button:hover {
+  background-color: #580a00;
+  transform: scale(0.9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* -------------------   {  Footer } -------------------------------- */
+
+.footer {
+  background-color: #070707;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+}
+.footer .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .NavFooter,
+.footer .IconsLink,
+.footer img {
+  margin-bottom: 20px;
+}
+.footer .NavFooter a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer .NavFooter a:hover {
+  color: #f87765;
+  font-size: 20px;
+}
+.footer .IconsLink a {
+  color: white;
+  padding: 0 15px;
+}
+.footer .IconsLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .IconsLink a:hover {
+  color: #f87765;
+}
+
+.footer p {
+  color: #f87765;
+}
+
+/* -------------------   {  Projects } -------------------------------- */
+.Projects {
+  background-color: #070707;
+  padding: 100px 0px;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.Projects h3 {
+  text-align: center;
+  color: #f87765;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 40px;
+}
+.Projects .waves {
+  position: absolute;
+width: 500px;
+top:5%;
+}
+.Projects .Card{
+  z-index: 2;
+}
+.Projects .cardd {
+  z-index: 2;
+  background-color: rgb(32, 32, 32);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Projects .cardd img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.Projects .cardd p {
+  font-size: 12px;
+  color: rgb(169, 169, 169);
+}
+.Projects .cardd a {
+  color: #f87765;
+  text-decoration: none;
 }

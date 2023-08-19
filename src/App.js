@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+// ------------------------------{ Libraries }----------------------------
 
-function App() {
+import React, { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashLoader } from "react-spinners/";
+
+//-----------------------------{ components  }--------------------
+import Home from "./Components/Home";
+import Projects from "./Components/Projects";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const App = () => {
+  const [loading, setloading] = useState(false);
+  useEffect(() => {
+    setloading(true);
+    setTimeout(() => {
+      setloading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {loading ? (
+        <div className="preloaderr">
+          <HashLoader color="#f87765" className="loader" />
+        </div>
+      ) : (
+        <>
+          <Routes>
+            <Route path="/" element={<Home />} />
+
+            <Route path="/Projects" element={<Projects />} />
+          
+          </Routes>
+        </>
+      )}
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
